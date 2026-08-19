@@ -37,6 +37,7 @@ opponent's behaviour consistent.
 
 ```
 bot/          Python bot — all game intelligence (reads JSON state, returns JSON actions)
+bot/tests/    Unit tests for the Python bot
 botbridge/    Thin C++ bridge between the MAXR server (binary protocol) and the bot (JSON)
 ```
 
@@ -112,6 +113,11 @@ process with redirected stdin, watches its output for the lobby-ready line and
 writes `startGame` at exactly that point — no timing guesswork, no window automation.
 
 <!-- PRÜFEN: Pfad/Name des Startskripts und der Aufruf ergänzen -->
+
+## Tests
+
+Unit tests for the Python bot live in `bot/tests`. They run the decision logic
+against mocked game states, so no server or bridge is required.
 
 ## Roadmap
 
