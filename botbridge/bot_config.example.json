@@ -1,0 +1,13 @@
+{
+  "server_ip": "127.0.0.1",
+  "server_port": 58600,
+  "player_name": "ClaudeBot",
+  "player_color": [255, 0, 0],
+  "clan": 0,
+  "starting_location_x": 0,
+  "starting_location_y": 0,
+  "ignore_starting_location_warning": true,
+  "max_landing_attempts": 1000,
+  "rng_seed": null,
+  "log_dir": "./bot_logs"
+}
